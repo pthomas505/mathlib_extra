@@ -1,3 +1,7 @@
--- This module serves as the root of the `MathlibExtra` library.
--- Import modules here that should be built as part of the library.
-import «MathlibExtra».Basic
+import MathlibExtra.Basic
+import MathlibExtra.Except
+import MathlibExtra.Finset
+import MathlibExtra.Fresh
+import MathlibExtra.FunctionUpdateITE
+import MathlibExtra.List
+import MathlibExtra.Tactics
