@@ -216,6 +216,25 @@ theorem Function.updateITE_comm
     rfl
 
 
+theorem Function.updateITE_same
+  {α β : Type}
+  [DecidableEq α]
+  (f : α → β)
+  (a : α)
+  (b : β)
+  (h1 : f a = b) :
+  Function.updateITE f a b = f :=
+  by
+    funext x
+    simp only [Function.updateITE]
+    split_ifs
+    case _ c1 =>
+      rw [c1]
+      rw [h1]
+    case _ c1 =>
+      rfl
+
+
 theorem Function.updateITE_idem
   {α β : Type}
   [DecidableEq α]
