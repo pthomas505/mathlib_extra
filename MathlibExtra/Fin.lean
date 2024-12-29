@@ -97,8 +97,6 @@ theorem list_of_fn_fin_zip_with_min_len_list_to_fn_cons
       simp
     case _ n ih =>
       simp
-      simp only [List.ofFnNthVal]
-      simp
 
 
 lemma list_of_fn_fin_zip_with_min_len_list_to_fn_eq_list_zip_with
