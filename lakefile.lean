@@ -13,4 +13,5 @@ require mathlib from git
 
 @[default_target]
 lean_lib «MathlibExtra» where
+  globs := #[.andSubmodules `MathlibExtra]
   -- add any library configuration options here
